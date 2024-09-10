@@ -6,6 +6,7 @@ export const Section = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 450px;
 
   & ${CardContainer}:first-child {
     background-image: url(${quotationMark});
@@ -14,7 +15,8 @@ export const Section = styled.div`
     background-position-x: 80%;
   }
 
-  @media (min-width: 900px) {
+  /* tablet */
+  @media (min-width: 1000px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
