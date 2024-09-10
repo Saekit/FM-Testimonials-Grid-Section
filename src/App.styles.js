@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
       font-weight: ${theme.regular};
       line-height: ${theme.lineHeight.body};
     `}
+    margin: 0;
   }
 `;
 export default GlobalStyle;
