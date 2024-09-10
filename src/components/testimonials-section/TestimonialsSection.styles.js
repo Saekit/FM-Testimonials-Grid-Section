@@ -1,10 +1,18 @@
 import styled from "styled-components";
 import { CardContainer } from "../testimonial-card/TestimonialCard.styles";
+import quotationMark from "../../assets/images/bg-pattern-quotation.svg";
 
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  & ${CardContainer}:first-child {
+    background-image: url(${quotationMark});
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 80%;
+  }
 
   @media (min-width: 900px) {
     display: grid;
