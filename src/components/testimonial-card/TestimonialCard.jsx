@@ -20,6 +20,8 @@ const TestimonialCard = ({ testimonial }) => {
     hasAvatarBorder,
     backgroundColor,
     headlineFontColor,
+    bodyFontColor,
+    verifiedFontColor,
   } = testimonial;
 
   return (
@@ -38,7 +40,7 @@ const TestimonialCard = ({ testimonial }) => {
           <UserNameText $headlineFontColor={headlineFontColor}>
             {userName}
           </UserNameText>
-          <VerifiedGradText>
+          <VerifiedGradText $verifiedFontColor={verifiedFontColor}>
             {verifiedGraduate && "Verified Graduate"}
           </VerifiedGradText>
         </HeaderTextContainer>
@@ -46,7 +48,7 @@ const TestimonialCard = ({ testimonial }) => {
       <HeadlineText $headlineFontColor={headlineFontColor}>
         {headline}
       </HeadlineText>
-      <BodyText>{body}</BodyText>
+      <BodyText $bodyFontColor={bodyFontColor}>{body}</BodyText>
     </CardContainer>
   );
 };

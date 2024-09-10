@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
   display: flex;
@@ -7,20 +7,22 @@ export const CardContainer = styled.div`
   justify-content: space-evenly;
   background-color: ${(props) => props.$backgroundColor};
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 `;
 
 export const CardHead = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-items: center;
 `;
 
 export const AvatarImg = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   border: ${(props) => props.$avatarBorder};
-  margin-right: 10px;
+  margin-right: 15px;
 `;
 
 export const HeaderTextContainer = styled.div`
@@ -31,22 +33,22 @@ export const HeaderTextContainer = styled.div`
 export const UserNameText = styled.p`
   color: ${(props) => props.$headlineFontColor};
   font-size: 1rem;
+  margin: 0;
 `;
 
 export const VerifiedGradText = styled.p`
-  ${({ theme }) => css`
-    color: ${theme.colors.lightGray};
-  `}
+  color: ${(props) => props.$verifiedFontColor};
   font-size: 0.8rem;
+  margin: 0;
 `;
 
 export const HeadlineText = styled.h1`
   color: ${(props) => props.$headlineFontColor};
+  font-size: 1.25rem;
 `;
 
 export const BodyText = styled.p`
-  ${({ theme }) => css`
-    color: ${theme.colors.lightGray};
-  `}
+  color: ${(props) => props.$bodyFontColor};
   font-size: 1rem;
+  margin: 0;
 `;
