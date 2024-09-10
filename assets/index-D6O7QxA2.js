@@ -88,6 +88,7 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 450px;
 
   & ${Re}:first-child {
     background-image: url(${Vm});
@@ -96,7 +97,8 @@ Error generating stack: `+o.message+`
     background-position-x: 80%;
   }
 
-  @media (min-width: 900px) {
+  /* tablet */
+  @media (min-width: 1000px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
