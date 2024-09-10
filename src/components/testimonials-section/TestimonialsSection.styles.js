@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { CardContainer } from "../testimonial-card/TestimonialCard.styles";
-import quotationMark from "../../assets/images/bg-pattern-quotation.svg";
+import quotationMark from "/bg-pattern-quotation.svg";
 
 export const Section = styled.div`
   display: flex;
